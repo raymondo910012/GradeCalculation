@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>成績計算網站</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Grade analysis</a></li>
+        <li><a href="#">terms of service</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="mainPart"></section>
+      <h1>Grade Input</h1>
+
+      <div class="buttons">
+        <button class="desend">降序</button>
+        <button class="asend">升序</button>
+      </div>
+
+      <div class="allInputs">
+        <form>
+          <div class="grade">
+            <input
+              type="text"
+              placeholder="class category"
+              class="classType"
+              list="opt"
+            />
+            <input type="text" placeholder="class number" class="classNumber" />
+            <input
+              type="text"
+              placeholder="credits"
+              class="classCradits"
+              min="0"
+              max="5"
+            />
+          </div>
+          <button class="trash"></button>
+        </form>
+      </div>
+    </main>
+
+    <datalist id="opt">
+      <option value="CS">Computer science</option>
+    </datalist>
+  </body>
+</html>
